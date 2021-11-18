@@ -1,0 +1,7 @@
+.reviews{
+    margin: 10px;
+  width: 300px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  background-color: white;
+}

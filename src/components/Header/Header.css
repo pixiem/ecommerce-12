@@ -1,0 +1,22 @@
+.div-one{
+    text-align: start;
+    margin-top: 80px;
+    padding-left: 120px;
+}
+.div-one h1{
+    font-weight: 800;
+    color: #515bbb;
+}
+.div-one h5{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.link{
+   text-decoration: none;
+   list-style: none;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: black;
+   color: white;
+   font-size: 18px;
+}

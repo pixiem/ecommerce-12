@@ -1,0 +1,13 @@
+.linkbtn{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    background-color: black;
+    margin: 5px;
+    color: white;
+    width: 150px;
+    display: flex;
+}
+.logoutbtn{
+    width: 100px;
+}
