@@ -20,9 +20,14 @@ const Navigation = () => {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
+      {user.email && <li class="nav-item">
+        <h5>{user.email}</h5>
+        </li>}
+        
         <li class="nav-item">
           <Link class="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
+        
         <li class="nav-item">
           <Link class="nav-link active" aria-current="page" to="/shop">Shop</Link>
         </li>

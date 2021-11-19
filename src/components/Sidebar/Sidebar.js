@@ -34,9 +34,15 @@ const Sidebar = () => {
            {adminemail &&  
            <Link  className="linkbtn" to="/makeadmin">Make Admin</Link>
            }
+           {adminemail &&  
+           <Link className="linkbtn" to="dashboard">Manage Products</Link>
+           }
+           {adminemail &&  
+           <Link  className="linkbtn" to="dashboard">Manage All Orders</Link>
+           }
            
            {!normalUser && <Link className="linkbtn"  to="/">go to home</Link> }
-           {!normalUser && <Link className="linkbtn"  to="/allmyorder">Order</Link> }
+           {!normalUser && <Link className="linkbtn"  to="/allmyorder">My Order</Link> }
           
            {!normalUser && <Link  className="linkbtn" to="/review"> REVIEW</Link> }
           

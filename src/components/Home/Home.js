@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Footer from '../Footer/Footer';
 import "./Home.css"
 import Header from '../Header/Header';
 import Landingproducts from '../LandingpageProducts/Landingproducts';
-import Navigation from '../Navigation/Navigation';
 import Reviews from '../Reviews/Reviews';
-import Review from '../Review/Review';
 
 const Home = () => {
  const [products, setProducts ] = useState([]);
@@ -28,7 +25,7 @@ const Home = () => {
         <Header></Header>
 
         <h1 className="trending">Trending Products</h1>
-      <div  className="row card-group card-group ">
+      <div  className="row landing card-group card-group ">
       {
            sixproducts.map(products => <Landingproducts
            products={products}
@@ -36,13 +33,36 @@ const Home = () => {
 
            </Landingproducts>)
        }
-     
+       </div>
+     <h1>Happy Clients Says</h1>
        <div className="comment">{
            reviews.map(review => <Reviews
             reviews={review}
            ></Reviews>)
        }</div>
-      </div>
+       <section className="row">
+           <h1>About Us</h1>
+       <div className=" row" >
+     <div className="col-md-6 col-sm-12">
+              <img width="400px" src="./128194410-flat-design-concept-of-our-team-about-us-community-management-.jpg" alt="" /> 
+     </div>
+     
+     
+     <div className="col-md-6 com-sm-12 div-one">
+         
+       <h1>WE ARE ALWAYS WITH YOU </h1>
+       <h5>First time we selling processor in bangladesh. Our all products are genuine and we hope you will be satisfied</h5>
+       <span>
+       
+       </span>
+     </div>
+       
+       </div>
+
+
+       </section>
+
+      
       
           
         </div>

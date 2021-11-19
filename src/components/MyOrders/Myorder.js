@@ -33,6 +33,8 @@ const Myorder = () => {
     return (
         <div>
             <Sidebar></Sidebar>
+            <input type="text" defaultValue={user.email} />
+            
             {myOrder.map(order=> <div> <h4>{order.name}</h4> <button  onClick={()=> handleDelete(order._id)} >Remove</button> </div> )}
         </div>
     );
